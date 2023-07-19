@@ -1,5 +1,5 @@
 header {
-    background-color: var(--oxford-blue);
+    background-color: var(--red);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -7,9 +7,11 @@ header {
     top: 0;
     width: 100vw;
     height: 10vh;
+    box-sizing: border-box;
     padding: 10px 0;
     /* overflow: visible; */
     z-index: 1000;
+    color: #fff;
 }
 
 header nav ul {
@@ -22,6 +24,7 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     position: relative;
+    color: #fff;
 }
 header nav ul li a::after {
     content: '';
@@ -59,12 +62,13 @@ header nav ul li a:hover::after {
         display: flex;
     }
     nav {
-        position: absolute;
+        position: fixed;
         width: 100vw;
         height: 90vh;
-        top: 13vh;
+        top: 10vh;
         right: -100%;
-        background-color: #111111e7;
+        /* background-color: #111111e7; */
+        background: linear-gradient(var(--red), var(--pumpkin));
         z-index: -1;
         display: flex;
         justify-content: center;
@@ -87,5 +91,26 @@ header nav ul li a:hover::after {
     }
 
     /* burger menu animations */
-    
+    .move-burger {
+        animation: move-burger 600ms ease-in-out;
+    }
+
+    /* .cross-line {
+        width: 80%;
+        height: 3px;
+        background-color: #eee;
+        transform: rotate(45deg);
+    } */
+
+    @keyframes move-burger {
+        0% {
+            transform: translateX(0px);
+        }
+        60% {
+            transform: translateX(-15px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
 }

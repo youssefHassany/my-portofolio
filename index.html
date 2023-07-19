@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youssef | Developer</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/hero.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/portofolio.css">
 </head>
 <body>
     <header>
@@ -18,11 +25,11 @@
                 </li>
                 
                 <li>
-                    <a href="#">About</a>
+                    <a href="#about">About</a>
                 </li>
 
                 <li>
-                    <a href="#">Portofolio</a>
+                    <a href="#portofolio">Portofolio</a>
                 </li>
 
                 <li>
@@ -37,7 +44,90 @@
         </div>
     </header>
 
+    <main>
+        <div class="main-msg animate__animated animate__fadeInLeft">
+            <h1>Hi, Youssef Here!</h1>
+            <p>Front-End Developer</p>
+        </div>
 
+        <div class="animate__animated animate__fadeInRight">
+            <img src="/imgs/hero.png" alt="">
+        </div>
+    </main>
+
+    <section class="about-section" id="about">
+        <h1 class="section-title">About me</h1>
+
+        <div class="about-grid">
+
+            <div class="about-card animate__animated animate__bounce">
+                <h3>Who am i?</h3>
+                <p>I'm a 20 years old college Student looking for internship/junior position as a Front-End Developer</p>
+            </div>
+
+            <div class="about-card animate__animated animate__bounce">
+                <h3>Tech Stack</h3>
+                <p>HTML, CSS, JavaScript, Git, Sass, tailwindCSS, ReactJS</p>
+            </div>
+
+            <div class="about-card animate__animated animate__bounce">
+                <h3>Current Goal</h3>
+                <p>Attempting to get employed as a Front-End Developer and to get Experiences</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="portofolio" id="portofolio">
+        <h1 class="section-title">Portofolio</h1>
+
+        <div class="project-one">
+            <img src="/imgs/dashboard.PNG" alt="">
+
+            <div class="txt-container">
+                <h3>Student Dashboard</h3>
+                <p>an interactive dashboard for students to help them analyze their performance with productive tools</p>
+                <p>Tools: HTML, CSS, JavaScript</p>
+                <div class="links">
+                    <a href="#" class="visit" target="_blank">Visit</a>
+                    <a href="#" class="github" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="project-two">
+            <img src="/imgs/findMyCash.PNG" alt="">
+
+            <div class="txt-container">
+                <h3>Find My Cash</h3>
+                <p>a friendly cash tracker that will help you keep track with all your purchases</p>
+                <p>Tools: React, taliwindCSS</p>
+                <div class="links">
+                    <a href="#" class="visit" target="_blank">Visit</a>
+                    <a href="#" class="github" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-three">
+            <img src="/imgs/dashboard.PNG" alt="">
+
+            <div class="txt-container">
+                <h3>Student Dashboard</h3>
+                <p>an interactive dashboard for students to help them analyze their performance with productive tools</p>
+                <p>Tools: HTML, CSS, JavaScript</p>
+                <div class="links">
+                    <a href="#" class="visit" target="_blank">Visit</a>
+                    <a href="#" class="github" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    
+    <!-- js -->
     <script src="js/nav.js"></script>
 </body>
 </html>
