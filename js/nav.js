@@ -17,8 +17,12 @@ let date = new Date()
 year.innerHTML = date.getFullYear()
 
 let form = document.querySelector("form");
+let nameInput = document.querySelectorAll("form input[type='text'");
+let emailInput = document.querySelectorAll("form input[type='email'");
+let textarea = document.querySelectorAll("form textarea")
 let errorMsg = document.querySelector(".error-msg")
 
-form.onsubmit = () => {
-    errorMsg.innerHTML = "Something went wrong :("
+form.onsubmit = (e) => {
+    e.preventDefault();
+    errorMsg.innerHTML = "Something went wrong :(";
 }
