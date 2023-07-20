@@ -15,10 +15,11 @@ main img {
 @media (max-width: 720px) {
     main {
         flex-direction: column;
-        font-size: 120%;
+        /* font-size: 120%; */
     }
     main img {
         transform: translateY(-70px);
+        width: 18rem;
     }
 }
 

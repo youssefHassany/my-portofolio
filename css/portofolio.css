@@ -36,6 +36,7 @@
     border-style: solid;
     border-width: 3px;
     position: relative;
+    font-weight: 700;
 }
 .links a::before {
     content: '';
