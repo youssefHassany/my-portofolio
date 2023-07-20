@@ -75,6 +75,9 @@ header nav ul li a:hover::after {
         align-items: center;
         transition: all 300ms;
     }
+    header nav ul li {
+        margin-left: 0;
+    }
     .show-nav {
         right: 0;
     }
@@ -88,6 +91,7 @@ header nav ul li a:hover::after {
     }
     nav ul li a {
         font-size: 25px;
+        font-weight: 700;
     }
 
     /* burger menu animations */

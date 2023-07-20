@@ -14,6 +14,8 @@
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
+    /* padding-bottom: 20px;
+    border-bottom: solid 2px var(--light-gray); */
 }
 .project-two {
     flex-direction: row-reverse;
@@ -26,7 +28,9 @@
 }
 .portofolio img {
     width: 50%;
-    border: solid 2px var(--pumpkin);
+    /* border: solid 2px var(--pumpkin); */
+    border-radius: 15px;
+    box-shadow: 0 0 6px -1px #000;
 }
 .links a {
     text-decoration: none;

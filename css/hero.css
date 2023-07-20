@@ -7,9 +7,24 @@ main {
     color: #000;
 }
 
-main img {
+main .big-img img {
     width: 24rem;
     animation: float-img 3s linear infinite;
+}
+
+.stack {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.stack img {
+    width: 30px;
+    height: 30px;
+    /* animation: none; */
+    transition: all 200ms;
+}
+.stack img:hover {
+    transform: translateY(-3px);
 }
 
 @media (max-width: 720px) {
@@ -17,7 +32,7 @@ main img {
         flex-direction: column;
         /* font-size: 120%; */
     }
-    main img {
+    main .big-img img {
         transform: translateY(-70px);
         width: 18rem;
     }

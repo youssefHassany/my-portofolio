@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/hero.css">
     <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/portofolio.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
     <header>
@@ -21,7 +22,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#hero">Home</a>
                 </li>
                 
                 <li>
@@ -33,7 +34,7 @@
                 </li>
 
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
 
             </ul>
@@ -44,13 +45,21 @@
         </div>
     </header>
 
-    <main>
+    <main id="hero">
         <div class="main-msg animate__animated animate__fadeInLeft">
             <h1>Hi, Youssef Here!</h1>
             <p>Front-End Developer</p>
+            <div class="stack">
+                <img src="/imgs/HTML5_logo_and_wordmark.svg.png" alt="">
+                <img src="/imgs/css3.svg" alt="">
+                <img src="/imgs/JavaScript-logo.png" alt="">
+                <img src="/imgs/React-icon.svg.png" alt="">
+                <img src="/imgs/tailwind.png" alt="">
+                <img src="/imgs/bootstrap.png" alt="">
+            </div>
         </div>
 
-        <div class="animate__animated animate__fadeInRight">
+        <div class="animate__animated animate__fadeInRight big-img">
             <img src="/imgs/hero.png" alt="">
         </div>
     </main>
@@ -66,13 +75,13 @@
 
             <div class="about-text">
                 <p>I'm a 20 years old college Student looking for internship/junior position as a Front-End Developer, Studying Business Information Systems at Suez Canal University in Egypt</p>
-                <p></p>
+                
             </div>
         </div>
     </section>
 
+    <h1 class="section-title" style="margin-top: 100px;">Portofolio</h1>
     <section class="portofolio" id="portofolio">
-        <h1 class="section-title">Portofolio</h1>
 
         <div class="project-one">
             <img src="/imgs/dashboard.PNG" alt="">
@@ -104,21 +113,45 @@
         </div>
 
         <div class="project-three">
-            <img src="/imgs/dashboard.PNG" alt="">
+            <img src="/imgs/todo.PNG" alt="">
 
             <div class="txt-container">
-                <h3>Student Dashboard</h3>
-                <p>an interactive dashboard for students to help them analyze their performance with productive tools</p>
-                <p>Tools: HTML, CSS, JavaScript</p>
+                <h3>React tailwind todo list</h3>
+                <p>basic Todo List App made with react.js & tailwindCSS</p>
+                <p>Tools: ReactJS, tailwindCSS</p>
                 <div class="links">
-                    <a href="#" class="visit" target="_blank">Visit</a>
-                    <a href="#" class="github" target="_blank">GitHub</a>
+                    <a href="https://react-tailwind-todo-app.vercel.app/" class="visit" target="_blank">Visit</a>
+                    <a href="https://github.com/youssefHassany/react-tailwind-todo-app" class="github" target="_blank">GitHub</a>
                 </div>
             </div>
         </div>
 
 
     </section>
+
+    <section class="contact" id="contact">
+        <div class="data">
+            <p>Phone: +20 122 6647 915</p>
+            <p>Email: youssefhassany22@gmail.com</p>
+            <p class="error-msg"></p>
+        </div>
+
+        <form action="">
+            <input type="text" placeholder="name" required>
+            <input type="email" placeholder="Email" required>
+            <!-- <input type="text" placeholder="message" style="height: 100px;"> -->
+            <textarea name="" id="" cols="30" rows="10" placeholder="message" required></textarea>
+            <input type="submit" value="Send">
+            <button>
+                <a href="/CV/CV.pdf" download="">Download CV</a>
+            </button>
+        </form>
+    </section>
+
+    <!-- css in style.css -->
+    <footer>
+        <p>Youssef Hassany <span></span> &copy;</p>
+    </footer>
     
     <!-- js -->
     <script src="js/nav.js"></script>
