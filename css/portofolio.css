@@ -8,7 +8,7 @@
     gap: 150px;
 }
 
-.project-one, .project-two, .project-three {
+.project-one, .project-two, .project-three, .project-four {
     width: 100%;
     height: fit-content;
     display: flex;
@@ -17,7 +17,7 @@
     /* padding-bottom: 20px;
     border-bottom: solid 2px var(--light-gray); */
 }
-.project-two {
+.project-two, .project-four {
     flex-direction: row-reverse;
 }
 .txt-container {
