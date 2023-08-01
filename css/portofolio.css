@@ -78,7 +78,7 @@
     .portofolio img {
         width: 100%;
     }
-    .project-one, .project-two, .project-three {
+    .project-one, .project-two, .project-three, .project-four {
         flex-direction: column;
     }
     .txt-container {
