@@ -225,12 +225,12 @@
       </div>
 
       <form action="">
-        <input type="text" placeholder="name" required />
-        <input type="email" placeholder="Email" required />
+        <input type="text" placeholder="name" required id="name-input" />
+        <input type="email" placeholder="Email" required id="email-input" />
         <!-- <input type="text" placeholder="message" style="height: 100px;"> -->
         <textarea
           name=""
-          id=""
+          id="message"
           cols="30"
           rows="10"
           placeholder="message"
@@ -249,6 +249,32 @@
     </footer>
 
     <!-- js -->
-    <script src="js/nav.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      emailjs.init("9MawTSTAwyw0nbLeg");
+    </script>
+    <script>
+      document
+        .querySelector("#contact form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          emailjs
+            .send("service_0ctpnqd", "template_237sscq", {
+              name: document.getElementById("name-input").value,
+              email: document.getElementById("email-input").value,
+              message: document.getElementById("message").value,
+            })
+            .then(
+              function (response) {
+                alert("Email sent successfully!");
+              },
+              function (error) {
+                console.error("Error sending email:", error);
+                alert("Error sending email: " + error);
+              }
+            );
+        });
+    </script>
   </body>
 </html>

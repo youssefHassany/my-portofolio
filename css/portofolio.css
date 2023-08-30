@@ -86,7 +86,8 @@
   .project-one,
   .project-two,
   .project-three,
-  .project-four {
+  .project-four,
+  .project-five {
     flex-direction: column;
   }
   .txt-container {
