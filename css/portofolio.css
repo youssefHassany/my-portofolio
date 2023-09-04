@@ -8,11 +8,7 @@
   gap: 150px;
 }
 
-.project-one,
-.project-two,
-.project-three,
-.project-four,
-.project-five {
+.project {
   width: 100%;
   height: fit-content;
   display: flex;
@@ -21,8 +17,7 @@
   /* padding-bottom: 20px;
     border-bottom: solid 2px var(--light-gray); */
 }
-.project-two,
-.project-four {
+.project:nth-child(even) {
   flex-direction: row-reverse;
 }
 .txt-container {
@@ -83,11 +78,8 @@
   .portofolio img {
     width: 100%;
   }
-  .project-one,
-  .project-two,
-  .project-three,
-  .project-four,
-  .project-five {
+  .project,
+  .project:nth-child(even) {
     flex-direction: column;
   }
   .txt-container {
