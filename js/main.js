@@ -29,6 +29,15 @@ const projects = [
     github: "https://github.com/youssefHassany/studentDashboard",
   },
   {
+    img: "../imgs/findMyCash.PNG",
+    title: "FindMyCash",
+    description:
+      "a friendly cash tracker that will help you keep track with all your purchases",
+    tools: "ReactJS, tailwindCSS",
+    link: "https://find-my-cash.vercel.app/",
+    github: "https://github.com/youssefHassany/find-my-cash",
+  },
+  {
     img: "../imgs/e-commerce.PNG",
     title: "E-Commerce Website",
     description:
@@ -47,15 +56,6 @@ const projects = [
     github: "https://github.com/youssefHassany/social-media",
   },
   {
-    img: "../imgs/findMyCash.PNG",
-    title: "FindMyCash",
-    description:
-      "a friendly cash tracker that will help you keep track with all your purchases",
-    tools: "ReactJS, tailwindCSS",
-    link: "https://find-my-cash.vercel.app/",
-    github: "https://github.com/youssefHassany/find-my-cash",
-  },
-  {
     img: "../imgs/todo.PNG",
     title: "React tailwind todo list",
     description: "basic Todo List App made with react.js & tailwindCSS",
@@ -69,28 +69,26 @@ let portofolioSection = document.getElementById("portofolio");
 portofolioSection.innerHTML = projects.map(
   (project) =>
     `<div class="project">
-  <img src=${project.img} alt="" />
+      <img src="${project.img}" alt="" />
 
-  <div class="txt-container">
-    <h3>${project.title}</h3>
-    <p>
-      ${project.description}
-    </p>
-    <p>Tools: ${project.tools}</p>
-    <div class="links">
-      <a
-        href=${project.link}
-        class="visit"
-        target="_blank"
-        >Visit</a
-      >
-      <a
-        href=${project.github}
-        class="github"
-        target="_blank"
-        >GitHub</a
-      >
-    </div>
-  </div>
-</div>`
+      <div class="txt-container">
+        <h3>${project.title}</h3>
+        <p>
+          ${project.description}
+        </p>
+        <p>Tools: ${project.tools}</p>
+        <div class="links">
+          <a
+            href="${project.link}"
+            class="visit"
+            target="_blank"
+          >Visit</a>
+          <a
+            href="${project.github}"
+            class="github"
+            target="_blank"
+          >GitHub</a>
+        </div>
+      </div>
+    </div>`
 );
