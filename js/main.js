@@ -20,13 +20,14 @@ year.innerHTML = date.getFullYear();
 // generate projects
 const projects = [
   {
-    img: "../imgs/dashboard.PNG",
-    title: "Student Dashboard",
-    description:
-      "an interactive dashboard for students to help them analyze their performance with productive tools",
-    tools: "HTML, CSS, JavaScript",
-    link: "https://youssefhassany.github.io/studentDashboard/",
-    github: "https://github.com/youssefHassany/studentDashboard",
+    img: "../imgs/busmug-production.png",
+    title: "Busmug",
+    description: `Busmug is a Studying system for students to help them analyze 
+      their performance with productive tolos and it has features like 
+      CRUD with firebase firestore, authentication & beautiful UI.`,
+    tools: "ReactJS, tailwindCSS, Firebase",
+    link: "https://basmag.web.app/",
+    github: "https://github.com/youssefHassany/Basmag",
   },
   {
     img: "../imgs/findMyCash.PNG",
